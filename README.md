@@ -10,7 +10,10 @@ If you just want to try the demo, cd into the demo directory, and run
 $ python runsingleimage.py 1.png 1_m.png twobranch_v1.pkl
 $ python view.py 1.png.txt
 ```
-The .pkl files can be found in the google drive (link update later).
+The .pkl files can be found in the google drive:
+- version 1 (used in the paper) https://drive.google.com/file/d/0B0gQFbJEIJ4kUTc2cGlDeDh6VGs/view?usp=sharing
+- version 2 (improved) https://drive.google.com/file/d/0B0gQFbJEIJ4kT3lCUy1UQVlZQnc/view?usp=sharing
+
 The first script runs the code on the image 1.png with segmentation mask 1_m.png using neural network weights twobranch_v1.pkl. Another set of weights twobranch_v2.pkl seems more robust. The input images must be of size 256x192. The second script visualizes the predicted point cloud. Move your mouse over the window to rotate the point cloud.
 
 If you are interested in training a network, here are the instructions.
