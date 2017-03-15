@@ -1,8 +1,19 @@
 ## Using the code
-Only training code fragments are uploaded. Data, pretrained model and more scripts are on the road.
 
-Make sure you have python-numpy, python-opencv, tensorflow, CUDA, etc.
+Training scripts and a couple of trained demo networks are included. More demos and the complete set of data are on the road.
+
+Make sure you have python-numpy, python-opencv, tensorflow, tflearn, CUDA, etc.
 Some paths are configured in makefile. Overwrite them properly.
+
+If you just want to try the demo, cd into the demo directory, and run
+```
+$ python runsingleimage.py 1.png 1_m.png twobranch_v1.pkl
+$ python view.py 1.png.txt
+```
+The .pkl files can be found in the google drive (link update later).
+The first script runs the code on the image 1.png with segmentation mask 1_m.png using neural network weights twobranch_v1.pkl. Another set of weights twobranch_v2.pkl seems more robust. The input images must be of size 256x192. The second script visualizes the predicted point cloud. Move your mouse over the window to rotate the point cloud.
+
+If you are interested in training a network, here are the instructions.
 
 Compiling CUDA code
 ```
@@ -30,6 +41,8 @@ example: $ python train_nn.py data=data dump=dump train
 ```
 
 ## Format of training data
+We will find the method to host the complete set of training data (~1T). Meanwhile, you can look at the first few minibatches in the data/ folder.
+
 .bin.gz files here are not gzipped file (sorry).
 ```
 python traindataviewer.py data/0/0.gz
