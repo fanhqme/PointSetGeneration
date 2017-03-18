@@ -16,7 +16,7 @@ The .pkl files can be found in the google drive:
 
 The first script runs the code on the image 1.png with segmentation mask 1_m.png using neural network weights twobranch_v1.pkl. Another set of weights twobranch_v2.pkl seems more robust. The input images must be of size 256x192. The second script visualizes the predicted point cloud. Move your mouse over the window to rotate the point cloud.
 
-If you want to try the networks on your own captured image, see ImageCaptureGuide.pdf first.
+**If you want to try the networks on your own captured image, see ImageCaptureGuide.pdf first.**
 
 If you are interested in training a network, here are the instructions.
 
