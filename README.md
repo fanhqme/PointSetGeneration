@@ -5,6 +5,8 @@ Training scripts and a couple of trained demo networks are included. More demos 
 Make sure you have python-numpy, python-opencv, tensorflow, tflearn, CUDA, etc.
 Some paths are configured in makefile. Overwrite them properly.
 
+### Running the demo
+
 If you just want to try the demo, cd into the demo directory, and run
 ```
 $ python runsingleimage.py 1.png 1_m.png twobranch_v1.pkl
@@ -17,6 +19,16 @@ The .pkl files can be found in the google drive:
 The first script runs the code on the image 1.png with segmentation mask 1_m.png using neural network weights twobranch_v1.pkl. Another set of weights twobranch_v2.pkl seems more robust. The input images must be of size 256x192. The second script visualizes the predicted point cloud. Move your mouse over the window to rotate the point cloud.
 
 **If you want to try the networks on your own captured image, see ImageCaptureGuide.pdf first.**
+
+We have also included a trained network corresponding to the R2N2 paper's setting. you can download runr2n2_128_v1.pkl from
+https://drive.google.com/file/d/0B0gQFbJEIJ4kQVdpeVBNb2RJTlk/view?usp=sharing
+and run
+```
+$ python runr2n2_128.py r1.png runr2n2_128_v1.pkl
+$ python view.py r1.png.txt
+```
+
+### Training
 
 If you are interested in training a network, here are the instructions.
 
