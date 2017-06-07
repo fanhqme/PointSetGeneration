@@ -2,6 +2,8 @@
 
 Training scripts and a couple of trained demo networks are included. More demos and the complete set of data are on the road.
 
+Some training data is released. See the bottom of this page.
+
 Make sure you have python-numpy, python-opencv, tensorflow, tflearn, CUDA, etc.
 Some paths are configured in makefile. Overwrite them properly.
 
@@ -58,10 +60,14 @@ example: $ python train_nn.py data=data dump=dump train
 ```
 
 ## Format of training data
-We will find the method to host the complete set of training data (~1T). Meanwhile, you can look at the first few minibatches in the data/ folder.
+A few minibatches of processed training data is in the data/ folder.
 
 .bin.gz files here are not gzipped file (sorry).
 ```
 python traindataviewer.py data/0/0.gz
 ```
 This shows a batch of training data. The loadBinFile function returns a tuple containing the color image, depth image, ground truth point cloud and model key names.
+
+Below is more data that will be useful for training. Notice: you must use https.
+
+https://shapenet.cs.stanford.edu/media/sampledata_220k.tar
