@@ -2,7 +2,7 @@
 
 Training scripts and a couple of trained demo networks are included. More demos and the complete set of data are on the road.
 
-Some training data is released. See the bottom of this page.
+**KMZ file of the ShapeNet shapes used in this experiment is released! See the end of this page**
 
 Make sure you have python-numpy, python-opencv, tensorflow, tflearn, CUDA, etc.
 Some paths are configured in makefile. Overwrite them properly.
