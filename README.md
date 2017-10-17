@@ -2,7 +2,8 @@
 
 Training scripts and a couple of trained demo networks are included. More demos and the complete set of data are on the road.
 
-**KMZ file of the ShapeNet shapes used in this experiment is released! See the end of this page**
+**KMZ file of the ShapeNet shapes used in this experiment are released! See the end of this page**
+**The full training batches used in this experiment are released! See the end of this page**
 
 Make sure you have python-numpy, python-opencv, tensorflow, tflearn, CUDA, etc.
 Some paths are configured in makefile. Overwrite them properly.
@@ -68,6 +69,9 @@ python traindataviewer.py data/0/0.gz
 ```
 This shows a batch of training data. The loadBinFile function returns a tuple containing the color image, depth image, ground truth point cloud and model key names.
 
-Below is more data that will be useful for training. Notice: you must use https.
+Below is the complete set of training data. Download them all into the data/ folder.
+https://www.dropbox.com/sh/68kfpqut2y75etz/AABtIn2LUMALTnULSTUr5ZlUa?dl=0
+
+Below is more data that might be useful. Notice: you must use https.
 
 https://shapenet.cs.stanford.edu/media/sampledata_220k.tar
